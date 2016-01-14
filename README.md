@@ -17,3 +17,7 @@ To deploy this code to Firebase:
 3. Run `$firebase login` if necessary and then run `$firebase init` and choose the app you created
 4. Set `builds/prod` as the public root
 4. Deploy with `$ firebase deploy`
+
+## Demo
+
+Check out a [Sandbox Demo](https://example-orcid.firebaseapp.com/). You can create a new SPA and use the same settings but if you create a new version of the [Example ORCID Application API](https://github.com/cwhunt/example-orcid-api) you'll need to update the AUTHORIZE_URL in `builds/dev/js/app/app-constants.js`.
