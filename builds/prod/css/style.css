@@ -1,0 +1,20 @@
+.nav, .pagination, .carousel, .panel-title a { 
+	cursor: pointer; 
+}
+
+.glyphicon:hover {
+  cursor: pointer;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.simplelist ul {
+	list-style-type: none;
+	padding-left:0;
+}
+
+a.plain:hover {
+  text-decoration: none;
+}

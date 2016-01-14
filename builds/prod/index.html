@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title>Generic Application</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css"> -->
+  <script src="js/lib/angular.min.js"></script>
+  <script src="js/lib/angular-ui-router.min.js"></script>
+  <script src="js/lib/ui-bootstrap-tpls.min.js"></script>
+  <!-- inject:js -->
+  <script src="js/example-orcid-spa.min.js"></script>
+  <!-- endinject -->  
+</head>
+<body class="container">
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" ng-click="isCollapsed = !isCollapsed" aria-expanded="true">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" ui-sref="home">Example App</a>
+      </div>
+      <div class="navbar-collapse collapse in" collapse="isCollapsed" aria-expanded="true">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="#">Left Link</a></li>
+<!--           <li ng-show="user" ui-sref-active="active"><a ui-sref="example"></a></li>
+ -->        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a ng-href="{{authorize_url}}">ORCID Login</a></li>
+<!--           <li ng-hide="user" ui-sref-active="active"><a ui-sref="login">Login</a></li>
+          <li ng-show="user" ui-sref-active="active"><a ui-sref="logout">Logout</a></li>
+ -->        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="page">
+  <div ng-controller="AlertsController">
+    <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+  </div>
+  <main class="clearfix" ui-view></main>
+  <footer>
+  </footer>
+  </div>
+</div>
+</body>
+</html>

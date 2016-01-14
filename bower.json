@@ -1,0 +1,20 @@
+{
+  "name": "example-orcid-spa",
+  "version": "0.0.1",
+  "authors": [
+    "Carl W. Hunt"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.2.28",
+    "angular-ui-router": "~0.2.14",
+    "angular-bootstrap": "~0.12.1",
+  }
+}
