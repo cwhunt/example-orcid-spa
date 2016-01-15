@@ -20,4 +20,4 @@ To deploy this code to Firebase:
 
 ## Demo
 
-Check out a [Sandbox Demo](https://example-orcid.firebaseapp.com/). You can create a new SPA and use the same settings but if you create a new version of the [Example ORCID Application API](https://github.com/cwhunt/example-orcid-api) you'll need to update the AUTHORIZE_URL in `builds/dev/js/app/app-constants.js`.
+Check out a [Sandbox Demo](https://example-orcid.firebaseapp.com/). You can create a new SPA and use the same settings but you'll get redirected to the demo application. To redirect to your new SPA update the site_url part of the redirect_uri part of AUTHORIZE_URL in `builds/dev/js/app/app-constants.js`. If you create a new version of the [Example ORCID Application API](https://github.com/cwhunt/example-orcid-api) you'll need to update the first part of the redirect_uri part of the AUTHORIZE_URL in `builds/dev/js/app/app-constants.js`.
